@@ -1,12 +1,12 @@
 export default {
-  github: 'https://github.com/shuding/nextra',
-  docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
-  titleSuffix: ' – Nextra',
+  github: 'https://github.com/MohammadTaseenKhan/kali-solve',
+  docsRepositoryBase: 'https://github.com/MohammadTaseenKhan/kali-solve/blob/master',
+  titleSuffix: ' – Kali Solve',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">Kali Solve</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Static Site Generator
+        Solve Your Kali Linux Problem
       </span>
     </>
   ),
