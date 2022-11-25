@@ -67,5 +67,5 @@ export default {
   footer: true,
   footerEditLink: 'Update this page on GitHub',
   footerText: <>MIT {new Date().getFullYear()} © Kali Solve.</>,
-  unstable_faviconGlyph: '🎃',
+  unstable_faviconGlyph: '🚀',
 }
