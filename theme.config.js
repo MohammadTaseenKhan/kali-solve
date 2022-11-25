@@ -62,7 +62,7 @@ body:(
   <>
   <script src="https://utteranc.es/client.js"
         repo="MohammadTaseenKhan/comment-hosting"
-        issue-term="url"
+        issue-term="https://www.kalisolve.ml"
         theme="github-dark"
         crossorigin="anonymous"
         async>
