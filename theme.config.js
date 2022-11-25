@@ -55,6 +55,19 @@ export default {
         href="/favicon-16x16.png"
       />
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+
+
+      <script src="https://utteranc.es/client.js"
+        repo="MohammadTaseenKhan/comment-hosting"
+        issue-term="url"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
     </>
   ),
 
