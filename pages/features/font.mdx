@@ -4,41 +4,50 @@ import Callout from 'nextra-theme-docs/callout'
 
 <Callout emoji="⚠️">This problem is common to everyone.</Callout>
 
-Nextra supports [Next.js Internationalized Routing](https://nextjs.org/docs/advanced-features/i18n-routing) out of the box.
+This happens because our Kali Linux doesn't have font of the other languages in our system. In today's tutorial we are going to fix the language and font problem in Kali Linux.
 
-To add multi-language pages to your Nextra application, just need to config `i18n` in `next.config.js`:
+> Solving this font and language problem is very easy. We just need to download the fonts of languages and paste them on right location. That's all.
 
-```js
-// next.config.js
-const withNextra = require('nextra')('nextra-theme-docs', './theme.config.js')
-module.exports = withNextra({
-  i18n: {
-    locales: ['en', 'zh', 'de'],
-    defaultLocale: 'en',
-  },
-})
+First of all we need to download the language and fonts from the internet. We can copy the fonts from other Operating systems (Ubuntu and even from Windows).
+
+We just uploaded the files as a zip file. It can be downloaded from this [Google Drive link](https://drive.google.com/file/d/1ks5pAsBSt4kIDBxtzK8s8gxpw5RYODFt/view?usp=sharing).
+
+We have downloaded the file file as we can see in the following screenshot:
+
+![image](https://user-images.githubusercontent.com/85288261/204045099-117dce28-bcd9-49fc-8145-1695556ad086.png)
+
+Now we unzip this by using right click and choose "Extract Here".
+
+![image](https://user-images.githubusercontent.com/85288261/204045117-0e30984d-23a2-446a-9c11-c8a2f35c695c.png)
+
+After finishing we can see that a folder called "Fonts" in our directory.
+
+![image](https://user-images.githubusercontent.com/85288261/204045158-297051f6-5d7c-4608-859a-8d10112e1dff.png)
+
+Now we just need to open the folder called "Fonts", and we got all the files into the directory as we can see in the following screenshot:
+
+![image](https://user-images.githubusercontent.com/85288261/204045217-4463d6a0-4e77-4264-845c-79323c8fbb39.png)
+
+We need to copy and paste these all files into /usr/share/fonts directory. For becoming a non-root user we can't paste these files directly on the directory. We need to open the file manager with root permission.
+
+So we need to close everything, and open a terminal. We need to type following command to open our file manager with root permission:
+
+```bash
+sudo thunar
 ```
 
-Then, add the locale codes to your file extensions (required for the default locale too):
+After giving our sudo password we can see that our Thunar file manager opens with root permission.
 
-```plaintext
-/pages
-  index.en.md
-  index.zh.md
-  index.de.md
-  meta.en.json
-  meta.zh.json
-  meta.de.json
-  ...
-```
+Then we just need to go into the "Fonts" directory and select all and copy everything. We can use keyboard shortcuts CTRL+A and CTRL+C for this. 
 
-Finally, add the `i18n` option to your `theme.config.js` to configure the language dropdown:
+![image](https://user-images.githubusercontent.com/85288261/204045302-cb3a1d43-2d53-406a-a4bc-e7479640416b.png)
 
-```jsx
-i18n: [
-  { locale: 'en', text: 'English' },
-  { locale: 'zh', text: '中文' },
-  { locale: 'de', text: 'Deutsch' },
-  { locale: 'ar', text: 'العربية', direction: 'rtl' },
-]
-```
+Then we need to go to the /usr/share/fonts directory, and paste everything here by using CTRL+V (or anyway). That's all.
+
+![image](https://user-images.githubusercontent.com/85288261/204045329-772c356b-0d3c-43f3-a3bf-327e97fbd492.png)
+
+We are done. Now we can open again Google's homepage and see if it works or not?
+
+![image](https://user-images.githubusercontent.com/85288261/204045358-4f15a2e3-159a-4fbf-8b57-e26227e139b7.png)
+
+We also can copy these font files from a Windows computer. Those font files will be located on C:/Windows/Fonts directory. We can copy them on a USB drive and paste on Kali Linux as we did above
