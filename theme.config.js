@@ -56,18 +56,6 @@ export default {
       />
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 
-
-      <script src="https://utteranc.es/client.js"
-        repo="MohammadTaseenKhan/comment-hosting"
-        issue-term="url"
-        theme="github-dark"
-        crossorigin="anonymous"
-        async>
-</script>
-
-
-
-
     </>
   ),
 
@@ -77,7 +65,7 @@ export default {
   prevLinks: true,
   nextLinks: true,
   footer: true,
-  footerEditLink: 'Edit this page on GitHub',
+  footerEditLink: 'Update this page on GitHub',
   footerText: <>MIT {new Date().getFullYear()} © Kali Solve.</>,
-  unstable_faviconGlyph: '👋',
+  unstable_faviconGlyph: '&#127875;',
 }
