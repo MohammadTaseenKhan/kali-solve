@@ -1,6 +1,6 @@
 export default {
   github: 'https://github.com/MohammadTaseenKhan/kali-solve',
-  docsRepositoryBase: 'https://github.com/MohammadTaseenKhan/kali-solve/blob/master',
+  docsRepositoryBase: 'https://github.com/MohammadTaseenKhan/kali-solve/blob/main',
   titleSuffix: ' – Kali Solve',
   logo: (
     <>
