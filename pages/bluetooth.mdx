@@ -1,0 +1,47 @@
+import Callout from 'nextra-theme-docs/callout'
+import Bleed from 'nextra-theme-docs/bleed'
+
+# Bluetooth not Working
+
+## Option One
+
+> Open your terminal
+
+type these commands:
+
+```bash
+service bluetooth restart
+```
+
+## Option two
+
+> Again open your terminal
+
+```bash
+sudo service bluetooth restart
+```
+
+On systemd systems:
+
+```bash
+sudo systemctl restart bluetooth
+```
+
+Then **Reboot**
+
+## Option three
+
+I assumed that mere starting the service didn't get BT to work. While checking it's status it was active (running), but in the above line it printed disabled .
+
+```bash
+systemctl enable bluetooth.service
+```
+
+```bash
+systemctl start bluetooth.service
+```
+
+## Final Decision
+
+
+> Use a dongle or Blutooth Adapter
