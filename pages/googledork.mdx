@@ -1,3 +1,383 @@
 import Callout from 'nextra-theme-docs/callout'
 import Bleed from 'nextra-theme-docs/bleed'
 
+> ![image](https://user-images.githubusercontent.com/85288261/201116890-440b87d9-5b21-40eb-8946-84f39b5c2c72.png)
+
+## About
+
+> A Google Dork is a search query that looks for specific information on Google's search engine. Google Dorks are developed and published by hackers and are often used in “Google Hacking”.
+Ever wondered how you could find information that isn’t displayed on Google’s search engine results? 
+Many search engines work on an algorithm that sorts the pieces of information that can harm the user’s safety. But there is always a backdoor to bypass the algorithm — in Google’s case, Google Dorking.
+
+> Google Dorks is a search string that leverages advanced search operators to find information that isn’t readily available on a particular website. 
+## Definition
+
+> Ethical barriers protect crucial information on the internet. But, sometimes, accessing such information is necessary, and you need to cross that barrier. This is where Google Dorking comes into the picture and helps you access that hidden information. 
+> Google Dorking, also known as Google hacking, is the method capable of returning the information difficult to locate through simple search queries by providing a search string that uses advanced search operators. 
+> Primarily, ethical hackers use this method to query the search engine and find crucial information. This Google hacking cheat sheet will help you carry out Google Dorking commands and access hidden information.
+## Google Dorking Commands
+
+
+### Cache Command
+
+> A cache is a metadata that speeds up the page search process. Google stores some data in its cache, such as current and previous versions of the websites. This cache holds much useful information that the developers can use. Some developers use cache to store information for their testing purpose that can be changed with new changes to the website. 
+You can use the following syntax for any random website to check the data. The result may vary depending on the updates from Google.
+```js
+cache:website address or url
+```
+-------------------
+
+## Intext and Allintext Command
+
+> To find a specific text from a webpage, you can use the intext command in two ways. First, you can provide a single keyword in the results. Second, you can look for multiple keywords. 
+You can use the following syntax for a single keyword.
+```js
+Intext:usernames
+```
+
+If you want to use multiple keywords, then you can use allintext. All the keywords will be separated using a single space between them. 
+
+Google will consider all the keywords and provide all the pages in the result. Thus, users only get specific results. So, make sure you use the right keywords or else you can miss important information.
+
+Suppose you want to look for the pages with keywords “username” and “password:” you can use the following query.
+
+```js
+allintext:”username” “password”
+```
+
+----------------
+
+## Filetype Command
+
+> This is one of the most important Dorking options as it filters out the most important files from several files. For example, you can apply a filter just to retrieve PDF files. If you are a developer, you can go for the log files, allowing them to keep track easily by applying the right filter. 
+To access simple log files, use the following syntax:
+```js
+filetype:log 
+```
+
+You will get all types of log files, but you still need to find the right one from thousands of logs. So, to narrow down your file search, you be more specific with the type of file you use with this syntax:
+
+```js
+allintext:username filetype:log
+```
+
+You will get specific results with the username mentioned in it — all you need to do is provide the right keyword.
+
+----------------
+
+## Intitle Command
+
+> Sometimes you want to filter out the documents based on HTML page titles. The main keywords exist within the title of the HTML page, representing the whole page. So, we can use this command to find the required information. 
+> Suppose you are looking for documents that have information about IP Camera. You have to write a query that will filter out the pages based on your chosen keyword.
+You can use the following syntax:
+```js
+intitle:”ip camera”
+```
+
+> You can also use multiple keywords with this query to get more specific results, separating each keyword with double-quotes. 
+First, Google will retrieve all the pages and then apply the filter to that retrieved result set. It will discard the pages that do not have the right keyword. 
+You can use the following syntax for that:
+
+```js
+allintitle:”ip camera” “dvr”
+```
+
+------------------
+
+## inurl Command
+
+> This command works similar to the intitle command; however, the inurl command filters out the documents based on the URL text. Those keywords are available on the HTML page, with the URL representing the whole page. You can use this command to filter out the documents.
+Suppose you want the documents with the information related to IP Camera. You can simply use the following query to tell google and filter out all the pages based on that keyword. You can also provide multiple keywords for more precise results.
+Syntax: 
+```js
+allinurl:tesla lambo
+```
+
+-------------------
+
+## Site Command
+
+> Site command will help you look for the specific entity. At first, you can try for keywords that will provide you with a broad range of information that may or may not be as per your need. Then, you can narrow down your search using other commands with a specific filter. 
+Suppose you want to buy a car and are looking for various options available from 2020. You’ll get a long list of options. Now, you can apply some keywords to narrow down your search and gather specific information that will help you buy a car. Here, you can use the site command to search only for specific websites.
+For example:
+
+```js
+site: https://examplewebsite.com/
+```
+
+-----------------
+
+## ext Command
+
+> If you want to search for a specific type of document, you can use the ext command.
+Suppose you want to write an article on a specific topic, but you cannot start right away without researching that topic. Mostly the researched articles are available in PDF format. You can specify the type of the file within your dork command.
+> Here, ext stands for an extension. This command works similarly to the filetype command. Now using the ext command, you can narrow down your search that is limited to the pdf files only. 
+You can use the following syntax:
+```js
+site:https://www.ford.com/ ext:pdf
+```
+
+------------------
+
+## Inposttitle
+
+> You can use this command when you want to search for a certain term within the blog. It is useful for blog search. 
+For example:
+```js
+inposttitle:weight loss goals
+```
+-----------------
+
+
+## Allintitle 
+
+> Say you run a blog, and want to research other blogs in your niche. This command will help you look for other similar, high-quality blogs.
+For example:
+```js
+allintitle:how to write content for seo
+```
+
+-------------------
+## Allinanchor 
+
+> You can use this command to do research on pages that have all the terms after the “inanchor” in the anchor text that links back to the page. 
+For example:
+```
+allinanchor:"how to draw anime"
+```
+-------------------
+
+## Inanchor
+
+> You can use this command to find pages with inbound links that contain the specified anchor text. 
+For example:
+```js
+inanchor:"digital painting"
+```
+-------------------
+
+## Around 
+
+> Looking for super narrow results? This command will provide you with results with two or more terms appearing on the page. 
+For example:
+```js
+digital drawing AROUND(2) tools
+```
+-------------------
+
+## @command
+
+> If you want your search to be specific to social media only, use this command. It’ll show results for your search only on the specified social media platform. 
+For example:
+```js
+mangoes @facebook
+```
+
+------------------
+
+
+## Quotes
+
+> If you use the quotes around the phrase, you will be able to search for the exact phrase. The search engine results will eliminate unnecessary pages. 
+For example:
+```js
+“search term 1”
+```
+
+---------------
+
+## Related: 
+
+> In some cases, you might want specific data with more than one website with similar content. You can provide the exact domain name with this Google Dorking command:
+```js
+“Related:domainname.com”
+```
+---------------
+## Info
+> You can use this command to find the information related to a specific domain name.  It lets you determine things, such as pages with the domain text, similar on-site pages, and the website’s cache. 
+For example:
+```js
+"Info:domainname.com"
+```
+---------------
+## Weather 
+
+> Curious about meteorology? Use this command to fetch Weather Wing device transmissions. 
+```js
+intitle:"Weather Wing WS-2"
+```
+You will see several devices connected worldwide that share weather details, such as wind direction, temperature, humidity, and more.
+
+
+---------------
+## Zoom Videos 
+
+> On the hunt for a specific Zoom meeting? You may find it with this command, but keep in mind that Zoom has since placed some restrictions to make it harder to find/disrupt Zoom meetings. However, as long as a URL is shared, you can still find a Zoom meeting.
+The only drawback to this is the speed at which Google indexes a website. By the time a site is indexed, the Zoom meeting might already be over.
+```js
+inurl:zoom.us/j and intext:scheduled for
+```
+---------------
+## SQL Dumps
+
+> Your database is highly exposed if it is misconfigured. You can also find these SQL dumps on servers that are accessible by domain. Sometimes, such database-related dumps appear on sites if there are no proper backup mechanisms in place while storing the backups on web servers. To find a zipped SQL file, use the following command.
+```js
+"index of" "database.sql.zip"
+```
+---------------
+## WordPress Admin
+> You can easily find the WordPress admin login pages using dork, as shown below.
+```js
+intitle:"Index of" wp-admin
+```
+---------------
+## Apache2
+> You can find Apache2 web pages with the following Google Dorking command:
+```js
+intitle:"Apache2 Ubuntu Default Page: It works"
+```
+---------------
+## phpMyAdmin
+
+> This tool is another method of compromising data, as phpMyAdmin is used to administer MySQL over the web. The Google dork to use is:
+```js
+"Index of" inurl:phpmyadmin
+```
+---------------
+## JIRA/Kibana
+
+> You can use Google Dorks to find web applications hosting important enterprise data (via JIRA or Kibana).
+```js
+inurl:Dashboard.jspa intext:"Atlassian Jira Project Management Software"
+```
+---------------
+## cPanel Password Reset
+
+> You can reset the passwords of the cPanel to control it:
+```js
+inurl:_cpanel/forgotpwd
+```
+---------------
+## Finding FTP Servers
+> If you want to access the FTP servers, you might need to mix the queries to get the desired output. You can use the following syntax:
+```js
+intitle:”index of” inurl:ftp
+```
+---------------
+## Accessing Online Cameras
+
+> Remember, information access is sometimes limited to cyber security teams despite our walkthrough of this Google Dorks cheat sheet. You can use the dork commands to access the camera's recording. Some people make that information available to the public, which can compromise their security.
+The following is the syntax for accessing the details of the camera.
+```js
+Intitle:”webcamXP 5”’
+```
+
+---------------
+## Search term 
+
+> You can use this operator to make your search more specific so the keyword will not be confused with something else. For example, if you are specifically looking for “Italian foods,” then you can use the following syntax.
+```js
+“Italian foods”
+```
+### OR
+
+> Using this operator, you can provide multiple keywords. You will get results if the web page contains any of those keywords. You can separate the keywords using “|.” For example.
+```js
+site:facebook.com | site:twitter.com
+```
+AND 
+
+> This operator will include all the pages containing all the keywords. The keywords are separated by the ‘&’ symbol. You can use the following syntax.
+```js
+site:facebook.com & site:twitter.com
+```
+---------------
+## Operators Combinaison
+
+> Not only this, you can combine both ‘or’ and ‘and’ operators to refine the filter. For example-
+```js
+(site:facebook.com | site:twitter.com) & intext:"login"
+```
+```js
+(site:facebook.com | site:twitter.com) (intext:"login")
+```
+Include Results 
+
+To get the results based on the number of occurrences of the provided keyword. For example-
+
+```js
+-site:facebook.com +site:facebook.*
+```
+
+Exclude Results 
+
+You can also exclude the results from your web page. For example-
+
+```js
+site:facebook.* -site:facebook.com
+```
+---------------
+## Synonyms 
+
+If you want to search for the synonyms of the provided keyword, then you can use the “~” sign before that keyword. Then, Google will provide you with suitable results. For example, if you want to search for the keyword “set” along with its synonym, such as configure, collection, change, etc., you can use the following:
+
+```js
+~set
+```
+---------------
+## Glob Pattern 
+
+You can use the glob pattern (*) when you are unsure what goes there and tell Google to make the search accordingly. For example”
+
+```js
+site:*.com
+```
+---------------
+## Search parameters 
+
+### Below are various search parameters:
+
+1. q- Its value is the search term.
+2. filter - Its value can be 1 or 0. If its value is set to 0, it will display all the potential duplicate results.
+3. as_epq- Its value can be a search phrase. You can use it to search for an exact phrase. There is no need to enclose the search phrase within quotes.
+4. as_ft-  Its value can be exclude (e) or include (i). 
+5. as_filetype- Can be a file extension. You can include or exclude the file type indicated by as_ft.
+6. as_occt- Its value can be - any (anywhere), title (page title), body (page text), url (page url), and links (page link). You can find the keyword within the specified location.
+7. as_dt- Its value can be exclude (e) or include (i). You can use it to exclude or include the site or domain indicated by as_sltesearch.
+8. as_sltesearch- Its value can be a site or domain. You can include or exclude the file type indicated by as_dt.
+9. as_qdr- Its value can be m3 (three months), m6 (six months), and y (past year). You can search for the pages included within the specified period. 
+
+---------------
+## How to Prevent Google Dorks
+
+You can use any of the following approaches to avoid falling under the control of a Google Dork. The following are the measures to prevent Google dork:
+
+You must encrypt sensitive and personal information such as usernames, passwords, payment details, and so forth.
+Also, check your website by running inquiries to check if you have any exposed sensitive data. If you find any exposed information, just remove them from search results with the help of the Google Search Console.
+Protect sensitive content using robots.txt document available in your root-level site catalog. It will prevent Google to index your website.
+
+```js
+User-agent: * 
+Disallow: / 
+```
+
+You can also block specific directories to be excepted from web crawling. If you have an /admin area and you need to protect it, just place this code inside:
+
+```js
+User-agent: * 
+Disallow: /admin/ 
+```
+
+Restrict access to specific files:
+
+```js
+User-agent: * 
+Disallow: /privatearea/file.html 
+```
+
+Restrict access to dynamic URLs that contain ‘?’ symbol:
+
+```js
+User-agent: * 
+Disallow: /*? 
+```
