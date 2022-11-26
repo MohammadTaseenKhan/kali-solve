@@ -30,3 +30,8 @@ dig https://www.kalisolve.ml
 <font color="#A347BA">;; WHEN: Sat Nov 26 20:01:53 +06 2022</font>
 <font color="#A347BA">;; MSG SIZE  rcvd: 85</font>
 </pre>
+
+
+## Contributors
+
+![Contributors](https://4.vercel.app/github/contributors/MohammadTaseenKhan/kali-solve?strokeopacity=1)
