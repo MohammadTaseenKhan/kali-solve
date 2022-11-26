@@ -35,4 +35,4 @@ dig https://www.kalisolve.ml
 
 ## Contributors
 
-![Contributors](https://4.vercel.app/github/contributors/MohammadTaseenKhan/kali-solve?strokeopacity=1)
+![GitHub Contributors Image](https://contrib.rocks/image?repo=MohammadTaseenKhan/kali-solve)
