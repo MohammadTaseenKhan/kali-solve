@@ -1,8 +1,9 @@
 # [Kali Solve](https://www.kalisolve.ml)
 
+## About Framework:
 
 **Nextra** is a [Next.js](https://nextjs.org) and [MDX](https://mdxjs.com) powered, no-code site generator.
-
+---------------------------
 ![](/public/demo.png)
 
 ```bash
