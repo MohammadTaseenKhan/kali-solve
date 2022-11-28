@@ -103,13 +103,13 @@ Optimised PIN lists are used by default unless the user selects a custom PIN lis
 
 ### Cracking PINs of different lengths
 
-Use the `--length` commandline option.
+Use the ```--length``` commandline option.
 
 Use this command to crack a 3 digit PIN, 
-`./android-pin-bruteforce crack --length 3`
+```./android-pin-bruteforce crack --length 3```
 
 Use this command to crack a 6 digit PIN
-`./android-pin-bruteforce crack --length 6`
+```./android-pin-bruteforce crack --length 6```
 
 ### Where did the optimised PIN lists come from?
 
@@ -122,10 +122,10 @@ The optimised PIN lists were generated from *Ga$$Pacc DB Leak* (21GB decompresse
 The reason that the 4 digit PIN list is used from a different source is because it gives better results than the generated list from *Ga$$Pacc DB Leak*.
 
 `optimised-pin-length-4.txt` is an optimised list of all possible 4 digit PINs, sorted by order of likelihood.
-It can be found with the filename `pinlist.txt` at https://github.com/mandatoryprogrammer/droidbrute
+It can be found with the filename `pinlist.txt` at [https://github.com/mandatoryprogrammer/droidbrute](https://github.com/mandatoryprogrammer/droidbrute)
 
 This list is used with permission from Justin Engler & Paul Vines from Senior Security Engineer, iSEC Partners,
-and was used in their Defcon talk, [Electromechanical PIN Cracking with Robotic Reconfigurable Button Basher (and C3BO)](https://www.defcon.org/html/defcon-21/dc-21-speakers.html#Engler)
+and was used in their Defcon talk, [Electromechanical PIN Cracking with Robotic Reconfigurable Button Basher and C3BO](https://www.defcon.org/html/defcon-21/dc-21-speakers.html#Engler)
 
 ### Cracking with Masks
 
