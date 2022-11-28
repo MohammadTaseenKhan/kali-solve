@@ -26,6 +26,8 @@ export default {
       <meta name="og:title" content="Kali Solve: Solve Your Kali Linux Problem" />
       <meta name="og:image" content="https://www.kalisolve.ml/og.png" />
       <meta name="apple-mobile-web-app-title" content="Kali Solve" />
+      <meta name="author" content="MD Taseen Khan" />
+      <meta name="keywords" content="kali, kalisolve, kalilinux, linux, ubuntu" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
