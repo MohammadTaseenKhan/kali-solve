@@ -28,6 +28,9 @@ export default {
       <meta name="apple-mobile-web-app-title" content="Kali Solve" />
       <meta name="author" content="MD Taseen Khan" />
       <meta name="keywords" content="kali, kalisolve, kalilinux, linux, ubuntu" />
+      <meta
+  http-equiv="Content-Security-Policy: vitals.vercel-insights.com"
+  content="default-src 'self'; img-src https://*; child-src 'none';" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
