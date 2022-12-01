@@ -2,3 +2,55 @@ import Callout from 'nextra-theme-docs/callout'
 import Bleed from 'nextra-theme-docs/bleed'
 
 # How to Run Windows Software on Linux
+
+
+## Open your Linux terminal and type these commands one-by-one
+
+Start by updating the Linux kernel repositories.
+
+type 
+```bash
+sudo apt update
+```
+and press ↵ Enter. When prompted, enter your password and press ↵ Enter. Then, when prompted, type 
+```bash
+clear
+```
+and press ↵ Enter. Now you’re ready to enter the commands to download Wine
+
+## Download Wine
+```bash
+sudo apt-get install wine 
+```
+and press ↵ Enter
+```bash
+sudo apt-get install wine32
+```
+and press ↵ Enter
+```bash
+sudo apt-get install libwine
+```
+and press ↵ Enter
+
+Even though the terminal might look intimidating, don’t worry! You’re unlikely to mess anything up, and all you have to do is copy these commands.
+
+## Navigate to the directory with the file, then open the file with Wine
+
+
+In the terminal, navigate to the directory containing the file with the command
+```bash
+cd <directory name>
+```
+Then, run the file with the command 
+```bash
+wine <filename>.exe
+```
+For instance, if the file example.exe were stored on your desktop, you’d follow this procedure:
+```bash
+cd Desktop/
+```
+and press ↵ Enter
+```bash
+wine example.exe
+```
+and press ↵ Enter
