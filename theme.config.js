@@ -1,6 +1,5 @@
 export default {
   github: 'https://github.com/MohammadTaseenKhan/kali-solve',
-  twitter: 'https://twitter.com/MDTaseenKhan',
   docsRepositoryBase: 'https://github.com/MohammadTaseenKhan/kali-solve/blob/main',
   titleSuffix: ' – Kali Solve',
   logo: (
