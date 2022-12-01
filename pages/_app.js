@@ -6,8 +6,8 @@ export default function Nextra({ Component, pageProps }) {
 <script src="https://giscus.app/client.js"
         data-repo="MohammadTaseenKhan/kali-solve"
         data-repo-id="R_kgDOIgNbNg"
-        data-category="[ENTER CATEGORY NAME HERE]"
-        data-category-id="[ENTER CATEGORY ID HERE]"
+        data-category="Comments"
+        data-category-id="DIC_kwDOIgNbNs4CS2bR"
         data-mapping="url"
         data-strict="1"
         data-reactions-enabled="1"
@@ -19,7 +19,6 @@ export default function Nextra({ Component, pageProps }) {
         crossorigin="anonymous"
         async>
 </script>
-
 
 
 
