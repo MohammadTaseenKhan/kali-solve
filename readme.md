@@ -35,4 +35,7 @@ dig https://www.kalisolve.ml
 
 ## Contributors
 
-![GitHub Contributors Image](https://contrib.rocks/image?repo=MohammadTaseenKhan/kali-solve)
+<a href="https://github.com/MohammadTaseenKhan/kali-solve/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MohammadTaseenKhan/kali-solve" />
+</a>
+
